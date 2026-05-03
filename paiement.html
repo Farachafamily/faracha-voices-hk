@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Paiement ‚Äî FARACHA VOICES HK</title>
+  <title>Paiement &#8212; FARACHA VOICES HK</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -210,9 +210,9 @@
         <span class="brand__name">FARACHA VOICES</span>
         <span class="brand__sub">Hong Kong</span>
       </div>
-      <span class="success-badge">‚úì Inscription enregistr√©e</span>
+      <span class="success-badge">&#10003; Inscription enregistr&#233;e</span>
       <h1 class="hero__title" id="welcome-title">Bienvenue !</h1>
-      <p class="hero__subtitle">Derni√®re √©tape : effectue ton virement pour valider d√©finitivement ton inscription.</p>
+      <p class="hero__subtitle">Derni&#232;re &#233;tape : effectue ton virement pour valider d&#233;finitivement ton inscription.</p>
     </div>
   </header>
 
@@ -220,32 +220,32 @@
     <section class="card">
       <div class="error-box" id="error-box"></div>
       <div id="rib-content">
-        <div class="loader">Chargement des coordonn√©es bancaires‚Ä¶</div>
+        <div class="loader">Chargement des coordonn&#233;es bancaires&#8230;</div>
       </div>
     </section>
 
     <section class="card">
-      <h3>√âtapes pour finaliser</h3>
+      <h3>&#201;tapes pour finaliser</h3>
       <ol class="steps-list">
-        <li>Effectue le virement depuis ton application ou agence bancaire en utilisant les coordonn√©es ci-dessus.</li>
-        <li>Mentionne <strong>obligatoirement</strong> ta r√©f√©rence dans le libell√© du virement.</li>
-        <li>Envoie-nous une preuve de virement par email √† <a href="mailto:toussaintmirella@gmail.com">toussaintmirella@gmail.com</a>.</li>
-        <li>Tu recevras ton planning de cours sous 48 h ouvr√©es apr√®s r√©ception du paiement.</li>
+        <li>Effectue le virement depuis ton application ou agence bancaire en utilisant les coordonn&#233;es ci-dessus.</li>
+        <li>Mentionne <strong>obligatoirement</strong> ta r&#233;f&#233;rence dans le libell&#233; du virement.</li>
+        <li>Envoie-nous une preuve de virement par email &#224; <a href="mailto:toussaintmirella@gmail.com">toussaintmirella@gmail.com</a>.</li>
+        <li>Tu recevras ton planning de cours sous 48 h ouvr&#233;es apr&#232;s r&#233;ception du paiement.</li>
       </ol>
     </section>
 
     <section class="card card--dark">
       <h3>Une question ?</h3>
       <ul>
-        <li>üìß <a href="mailto:toussaintmirella@gmail.com">toussaintmirella@gmail.com</a></li>
-        <li>üïò Lundi‚ÄìVendredi ¬∑ 9h‚Äì18h (heure Hong Kong)</li>
+        <li>&#128231; <a href="mailto:toussaintmirella@gmail.com">toussaintmirella@gmail.com</a></li>
+        <li>&#128344; Lundi&#8211;Vendredi &#183; 9h&#8211;18h (heure Hong Kong)</li>
       </ul>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>¬© <span id="year"></span> FARACHA VOICES HK &nbsp;¬∑&nbsp; Tous droits r√©serv√©s</p>
+      <p>&#169; <span id="year"></span> FARACHA VOICES HK &nbsp;&#183;&nbsp; Tous droits r&#233;serv&#233;s</p>
     </div>
   </footer>
 
@@ -272,7 +272,7 @@
       const container = document.getElementById("rib-content");
       const errorBox = document.getElementById("error-box");
 
-      // Coordonn√©es bancaires r√©elles
+      // Coordonn\u00e9es bancaires r\u00e9elles
       renderRIB({
         titulaire: "Mirella Toussaint",
         banque: "DBS Bank (Hong Kong) Limited",
@@ -293,9 +293,9 @@
       } catch (err) {
         console.error(err);
         errorBox.classList.add("is-visible");
-        errorBox.innerHTML = `<strong>Impossible de charger les coordonn√©es bancaires.</strong><br>
+        errorBox.innerHTML = `<strong>Impossible de charger les coordonn\u00e9es bancaires.</strong><br>
           Contacte-nous directement : <a href="mailto:toussaintmirella@gmail.com?subject=Paiement%20${encodeURIComponent(reference)}">toussaintmirella@gmail.com</a>
-          ‚Äî r√©f√©rence : <code>${reference}</code>`;
+          \u2014 r\u00e9f\u00e9rence : <code>${reference}</code>`;
         container.innerHTML = "";
       }
     }
@@ -306,14 +306,14 @@
 
       container.innerHTML = `
         <div class="rib-amount">
-          <div class="rib-amount__label">Montant √† virer</div>
+          <div class="rib-amount__label">Montant \u00e0 virer</div>
           <div class="rib-amount__value">${fmt(totalHKD)}</div>
-          <div class="rib-amount__detail">‚âà ${eurApprox.toLocaleString("fr-FR")} ‚Ç¨ ¬∑ ${monthLabel} √† 3 500 HKD/mois</div>
+          <div class="rib-amount__detail">\u2248 ${eurApprox.toLocaleString("fr-FR")} \u20ac \u00b7 ${monthLabel} \u00e0 3 500 HKD/mois</div>
         </div>
 
         <div class="rib-row">
           <div>
-            <div class="rib-row__label">B√©n√©ficiaire</div>
+            <div class="rib-row__label">B\u00e9n\u00e9ficiaire</div>
             <div class="rib-row__value" id="copy-titulaire">${bank.titulaire}</div>
           </div>
           <button class="copy-btn" onclick="copyText('copy-titulaire', this)">Copier</button>
@@ -329,9 +329,9 @@
 
         <div class="rib-row">
           <div>
-            <div class="rib-row__label">Num√©ro de compte</div>
+            <div class="rib-row__label">Num\u00e9ro de compte</div>
             <div class="rib-row__value" id="copy-compte">${bank.compte}</div>
-            <div class="rib-row__hint">Transferts locaux accept√©s en USD, CNY et EUR</div>
+            <div class="rib-row__hint">Transferts locaux accept\u00e9s en USD, CNY et EUR</div>
           </div>
           <button class="copy-btn" onclick="copyText('copy-compte', this)">Copier</button>
         </div>
@@ -361,9 +361,9 @@
         </div>
 
         <div class="rib-reference">
-          <strong>üìå R√©f√©rence obligatoire dans le libell√© du virement</strong>
+          <strong>\u1f4cc R\u00e9f\u00e9rence obligatoire dans le libell\u00e9 du virement</strong>
           <code>${reference}</code>
-          <p>Cette r√©f√©rence permet de retrouver ton dossier rapidement.</p>
+          <p>Cette r\u00e9f\u00e9rence permet de retrouver ton dossier rapidement.</p>
         </div>
       `;
     }
@@ -371,7 +371,7 @@
     function copyText(id, btn) {
       const text = document.getElementById(id).textContent.trim();
       navigator.clipboard.writeText(text).then(() => {
-        btn.textContent = "‚úì Copi√©";
+        btn.textContent = "\u2713 Copi\u00e9";
         btn.classList.add("is-copied");
         setTimeout(() => {
           btn.textContent = "Copier";
