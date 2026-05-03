@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Paiement ‚Äî FARACHA VOICES HK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold-50:  #fffdf5;
+      --gold-100: #fef9e7;
+      --gold-300: #f9d97a;
+      --gold-400: #f4c430;
+      --gold-500: #d4a017;
+      --gold-600: #b8860b;
+      --gold-700: #946a08;
+      --gold-900: #3d2b02;
+      --ink: #1a1208;
+      --ink-soft: #5a4a2a;
+      --muted: #9a8060;
+      --white: #fff;
+      --surface: #fdfaf3;
+      --card-bg: #fffef9;
+      --border: rgba(212,160,23,0.18);
+      --shadow: 0 4px 32px rgba(100,60,0,0.10);
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Jost', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); background: var(--surface); color: var(--ink); min-height: 100vh; font-size: 15px; line-height: 1.7; }
+    .container { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+
+    .hero {
+      background: linear-gradient(160deg, #1a1208 0%, #2e1f06 50%, #3d2b02 100%);
+      padding: 48px 0 44px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 40% at 80% 20%, rgba(212,160,23,0.18) 0%, transparent 70%);
+    }
+    .hero__inner { position: relative; z-index: 1; text-align: center; }
+
+    .brand { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; margin-bottom: 24px; }
+    .brand__mark { font-family: var(--font-display); font-size: 12px; letter-spacing: 0.35em; color: var(--gold-400); text-transform: uppercase; }
+    .brand__divider { width: 48px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-500), transparent); margin: 6px auto; }
+    .brand__name { font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--white); }
+    .brand__sub { font-size: 10px; font-weight: 300; letter-spacing: 0.4em; color: var(--gold-300); text-transform: uppercase; margin-top: 4px; }
+
+    .success-badge {
+      display: inline-block;
+      background: rgba(212,160,23,0.15);
+      border: 1px solid rgba(212,160,23,0.35);
+      color: var(--gold-300);
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+
+    .hero__title { font-family: var(--font-display); font-size: 36px; font-weight: 400; font-style: italic; color: var(--white); margin-bottom: 8px; }
+    .hero__subtitle { font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.6); max-width: 420px; margin: 0 auto; }
+
+    main { padding: 40px 0 32px; }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 36px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .rib-amount {
+      text-align: center;
+      padding: 28px;
+      background: linear-gradient(135deg, #2e1f06, #1a1208);
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+    .rib-amount__label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
+    .rib-amount__value { font-family: var(--font-display); font-size: 42px; font-weight: 700; color: var(--gold-300); }
+    .rib-amount__detail { font-size: 13px; color: rgba(255,255,255,0.45); margin-top: 4px; }
+
+    .rib-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .rib-row:last-child { border-bottom: none; }
+    .rib-row__label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-600); margin-bottom: 2px; }
+    .rib-row__value { font-size: 15px; font-weight: 500; color: var(--ink); }
+    .rib-row__hint { font-size: 12px; color: var(--muted); }
+
+    .copy-btn {
+      flex-shrink: 0;
+      font-family: var(--font-body);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--gold-600);
+      padding: 7px 16px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .copy-btn:hover { background: var(--gold-100); border-color: var(--gold-400); }
+    .copy-btn.is-copied { background: var(--gold-600); color: white; border-color: var(--gold-600); }
+
+    .rib-reference {
+      margin-top: 20px;
+      padding: 20px;
+      background: var(--gold-50);
+      border: 1px solid rgba(212,160,23,0.25);
+      border-radius: 2px;
+      text-align: center;
+    }
+    .rib-reference strong { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-700); }
+    .rib-reference code { font-size: 22px; font-weight: 700; color: var(--gold-700); display: block; margin: 8px 0 4px; letter-spacing: 0.08em; }
+    .rib-reference p { font-size: 12px; color: var(--muted); }
+
+    .steps-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .steps-list li {
+      padding-left: 28px;
+      position: relative;
+      font-size: 14px;
+      color: var(--ink-soft);
+      counter-increment: steps;
+    }
+    .steps-list { counter-reset: steps; }
+    .steps-list li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 18px; height: 18px;
+      background: var(--gold-600);
+      color: white;
+      font-size: 10px;
+      font-weight: 600;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .steps-list a { color: var(--gold-600); }
+
+    .card--dark {
+      background: linear-gradient(135deg, #2e1f06 0%, #1a1208 100%);
+      border-color: rgba(212,160,23,0.2);
+    }
+    .card--dark h3 { color: var(--gold-300); }
+    .card--dark ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .card--dark li { font-size: 14px; color: rgba(255,255,255,0.7); }
+    .card--dark a { color: var(--gold-400); }
+
+    .error-box {
+      display: none;
+      background: #fff5f5;
+      border: 1px solid #fcc;
+      border-radius: 2px;
+      padding: 16px;
+      font-size: 14px;
+      color: #c0392b;
+      margin-bottom: 20px;
+    }
+    .error-box.is-visible { display: block; }
+
+    .loader { text-align: center; padding: 40px; font-size: 13px; color: var(--muted); letter-spacing: 0.08em; }
+
+    .footer { background: var(--ink); padding: 28px 0; text-align: center; }
+    .footer p { font-size: 11px; font-weight: 300; letter-spacing: 0.1em; color: rgba(255,255,255,0.35); }
+
+    @media (max-width: 560px) {
+      .card { padding: 24px 16px; }
+      .rib-amount__value { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__inner container">
+      <div class="brand">
+        <span class="brand__mark">Coaching vocal</span>
+        <div class="brand__divider"></div>
+        <span class="brand__name">FARACHA VOICES</span>
+        <span class="brand__sub">Hong Kong</span>
+      </div>
+      <span class="success-badge">‚úì Inscription enregistr√©e</span>
+      <h1 class="hero__title" id="welcome-title">Bienvenue !</h1>
+      <p class="hero__subtitle">Derni√®re √©tape : effectue ton virement pour valider d√©finitivement ton inscription.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="error-box" id="error-box"></div>
+      <div id="rib-content">
+        <div class="loader">Chargement des coordonn√©es bancaires‚Ä¶</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>√âtapes pour finaliser</h3>
+      <ol class="steps-list">
+        <li>Effectue le virement depuis ton application ou agence bancaire en utilisant les coordonn√©es ci-dessus.</li>
+        <li>Mentionne <strong>obligatoirement</strong> ta r√©f√©rence dans le libell√© du virement.</li>
+        <li>Envoie-nous une preuve de virement par email √† <a href="mailto:toussaintmirella@gmail.com">toussaintmirella@gmail.com</a>.</li>
+        <li>Tu recevras ton planning de cours sous 48 h ouvr√©es apr√®s r√©ception du paiement.</li>
+      </ol>
+    </section>
+
+    <section class="card card--dark">
+      <h3>Une question ?</h3>
+      <ul>
+        <li>üìß <a href="mailto:toussaintmirella@gmail.com">toussaintmirella@gmail.com</a></li>
+        <li>üïò Lundi‚ÄìVendredi ¬∑ 9h‚Äì18h (heure Hong Kong)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>¬© <span id="year"></span> FARACHA VOICES HK &nbsp;¬∑&nbsp; Tous droits r√©serv√©s</p>
+    </div>
+  </footer>
+
+  <script>
+    const APPS_SCRIPT_URL = "REPLACE_ME";
+    const PRICE_HKD = 3500;
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const params = new URLSearchParams(window.location.search);
+    const reference = params.get("ref") || sessionStorage.getItem("fv_reference") || "FV-DEMO";
+    const dureeMois = parseInt(params.get("duree") || "3", 10);
+    const prenom = params.get("prenom") || "";
+
+    if (prenom) {
+      document.getElementById("welcome-title").textContent = `Merci ${prenom} !`;
+    }
+
+    const totalHKD = PRICE_HKD * dureeMois;
+    const eurApprox = Math.round(totalHKD * 0.117);
+    const fmt = n => n.toLocaleString("fr-FR") + " HKD";
+
+    async function loadRIB() {
+      const container = document.getElementById("rib-content");
+      const errorBox = document.getElementById("error-box");
+
+      // Coordonn√©es bancaires r√©elles
+      renderRIB({
+        titulaire: "Mirella Toussaint",
+        banque: "DBS Bank (Hong Kong) Limited",
+        codeBanque: "016",
+        compte: "7968073266",
+        codeAgence: "478",
+        swift: "DHBKHKHH",
+        adresse: "G/F, The Center, 99 Queen's Road Central, Central, Hong Kong"
+      });
+      return;
+
+      try {
+        const resp = await fetch(`${APPS_SCRIPT_URL}?action=getBank&ref=${encodeURIComponent(reference)}`);
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const bank = await resp.json();
+        if (!bank.success) throw new Error(bank.error || "Erreur serveur");
+        renderRIB(bank.data);
+      } catch (err) {
+        console.error(err);
+        errorBox.classList.add("is-visible");
+        errorBox.innerHTML = `<strong>Impossible de charger les coordonn√©es bancaires.</strong><br>
+          Contacte-nous directement : <a href="mailto:toussaintmirella@gmail.com?subject=Paiement%20${encodeURIComponent(reference)}">toussaintmirella@gmail.com</a>
+          ‚Äî r√©f√©rence : <code>${reference}</code>`;
+        container.innerHTML = "";
+      }
+    }
+
+    function renderRIB(bank) {
+      const container = document.getElementById("rib-content");
+      const monthLabel = dureeMois > 1 ? `${dureeMois} mois` : "1 mois";
+
+      container.innerHTML = `
+        <div class="rib-amount">
+          <div class="rib-amount__label">Montant √† virer</div>
+          <div class="rib-amount__value">${fmt(totalHKD)}</div>
+          <div class="rib-amount__detail">‚âà ${eurApprox.toLocaleString("fr-FR")} ‚Ç¨ ¬∑ ${monthLabel} √† 3 500 HKD/mois</div>
+        </div>
+
+        <div class="rib-row">
+          <div>
+            <div class="rib-row__label">B√©n√©ficiaire</div>
+            <div class="rib-row__value" id="copy-titulaire">${bank.titulaire}</div>
+          </div>
+          <button class="copy-btn" onclick="copyText('copy-titulaire', this)">Copier</button>
+        </div>
+
+        <div class="rib-row">
+          <div>
+            <div class="rib-row__label">Banque</div>
+            <div class="rib-row__value">${bank.banque}</div>
+            <div class="rib-row__hint">Code banque : ${bank.codeBanque || ""}</div>
+          </div>
+        </div>
+
+        <div class="rib-row">
+          <div>
+            <div class="rib-row__label">Num√©ro de compte</div>
+            <div class="rib-row__value" id="copy-compte">${bank.compte}</div>
+            <div class="rib-row__hint">Transferts locaux accept√©s en USD, CNY et EUR</div>
+          </div>
+          <button class="copy-btn" onclick="copyText('copy-compte', this)">Copier</button>
+        </div>
+
+        <div class="rib-row">
+          <div>
+            <div class="rib-row__label">Code agence</div>
+            <div class="rib-row__value" id="copy-agence">${bank.codeAgence}</div>
+          </div>
+          <button class="copy-btn" onclick="copyText('copy-agence', this)">Copier</button>
+        </div>
+
+        <div class="rib-row">
+          <div>
+            <div class="rib-row__label">Code SWIFT / BIC</div>
+            <div class="rib-row__value" id="copy-swift">${bank.swift}</div>
+            <div class="rib-row__hint">Pour transferts internationaux</div>
+          </div>
+          <button class="copy-btn" onclick="copyText('copy-swift', this)">Copier</button>
+        </div>
+
+        <div class="rib-row">
+          <div>
+            <div class="rib-row__label">Adresse banque</div>
+            <div class="rib-row__value" style="font-size:14px;">${bank.adresse}</div>
+          </div>
+        </div>
+
+        <div class="rib-reference">
+          <strong>üìå R√©f√©rence obligatoire dans le libell√© du virement</strong>
+          <code>${reference}</code>
+          <p>Cette r√©f√©rence permet de retrouver ton dossier rapidement.</p>
+        </div>
+      `;
+    }
+
+    function copyText(id, btn) {
+      const text = document.getElementById(id).textContent.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = "‚úì Copi√©";
+        btn.classList.add("is-copied");
+        setTimeout(() => {
+          btn.textContent = "Copier";
+          btn.classList.remove("is-copied");
+        }, 2000);
+      });
+    }
+
+    loadRIB();
+  </script>
+</body>
+</html>
